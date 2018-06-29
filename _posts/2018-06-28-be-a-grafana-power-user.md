@@ -41,7 +41,7 @@ I recommend a width of 1 to ensure that the points merely point the data out and
 
 Standardise your stats, then use repeated Panels for repeated stat types. e.g. for each dependency, show timings, counts and errors.
 
-You can use template variables to create a list of options (even discover the available stats from your graphs.), then configure a graph or panel to repeat for each item in the list.
+You can use template variables to create a list of options (even discover the available stats from your graphs), then configure a graph or panel to repeat for each item in the list.
 
 ![Repeat a panel for each value in a templated variable](/images/posts/2018-06-28-be-a-grafana-power-user/repeatpanels.png)
 

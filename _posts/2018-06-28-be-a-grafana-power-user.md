@@ -5,9 +5,9 @@ tags: ["grafana", "graphite", "monitoring"]
 layout: post
 ---
 
-Graphite, the time series stats database, and Grafana, the brilliant visualisation tool have excellent documentation that tells us how to operate the software, but simply knowing how to use a tool does not mean you truly grok it. 
+Graphite (the time series stats database) and Grafana (the brilliant visualisation tool) both have excellent documentation that tells us how to operate the software, but simply knowing how to use a tool does not mean you truly grok it.
 
-This is a collection of tips and suggestions to make sure that your use of these tools is easy and meaningful.
+This is a collection of tips and suggestions to help your use of these tools be easier and more meaningful.
 
 <!--more-->
 
@@ -27,7 +27,7 @@ An overridden interval of 1 hour
 
 ![1 hour interval](/images/posts/2018-06-28-be-a-grafana-power-user/interval-1h.png)
 
-Trends in the data can be made more obvious by viewing it at the right level of detail.
+Trends in the data can be made more obvious by viewing it at a different level of detail.
 
 ## 2. Use Points Draw Mode to make sparse data more visible
 
@@ -49,7 +49,7 @@ Maintaining duplicate graphs will just give you a headache.
 
 ## 4. Share Snapshots
 
-Dashboards and the data are changing all the time. If you share a link to a dashboard, the graphs may be changed or the data may be archived or reaggregated  in future, meaning that your link might no longer show the information you wanted to share.
+Dashboards and their data are changing all the time. If you share a link to a dashboard, the graphs may be changed or the data may be archived or reaggregated  in future, meaning that your link may no longer show the information you wanted to share.
 
 ![Share snapshot dialog](/images/posts/2018-06-28-be-a-grafana-power-user/sharesnapshots.png)
 
@@ -61,7 +61,7 @@ Linear scale on the Y axis can often hide data. Outliers can cause the fine deta
 
 ![Linear scale is only clear for outliers](/images/posts/2018-06-28-be-a-grafana-power-user/yaxisscale-linear.png)
 
-Using Log2 scale for the same data shows that the different data series are not exactly the same, and that smaller, but still significant spike are more common.
+Using Log2 as the scale for the same data shows that the different data series are not exactly the same, and that smaller, but still significant spikes are more common.
 
 ![Log2 scale highlights smallers but significant change as well](/images/posts/2018-06-28-be-a-grafana-power-user/yaxisscale-log2.png)
 
@@ -87,7 +87,7 @@ Lack of data should not be hidden. Think carefully before transforming data to e
 
 ## 2. Applying transformNull(0) before aggregation changes the meaning of the aggregation
 
-Always [transformNull(0)](http://graphite.readthedocs.io/en/latest/functions.html#graphite.render.functions.transformNull) (if you are going to) before [movingAvg()](http://graphite.readthedocs.io/en/latest/functions.html#graphite.render.functions.movingAverage), [movingMedian()](http://graphite.readthedocs.io/en/latest/functions.html#graphite.render.functions.movingMedian), or other aggregate functions, otherwise the aggregations will not include the transformed data. 
+If you *do* choose to use [transformNull(0)](http://graphite.readthedocs.io/en/latest/functions.html#graphite.render.functions.transformNull), do so before [movingAvg()](http://graphite.readthedocs.io/en/latest/functions.html#graphite.render.functions.movingAverage), [movingMedian()](http://graphite.readthedocs.io/en/latest/functions.html#graphite.render.functions.movingMedian), or other aggregate functions, otherwise the aggregations will not include the transformed data.
 
 ![The difference between transforming first, or aggregating first](/images/posts/2018-06-28-be-a-grafana-power-user/transformfirst-thenaggregate.png)
 
@@ -97,7 +97,7 @@ Always specify the unit of time, e.g. summarise(), movingAverage(), the default 
 
 ![Failing to specify units on aggregations can lead to unpredictable results.](/images/posts/2018-06-28-be-a-grafana-power-user/specifyunits.png)
 
-On sparse data, the last N datapoints may be 100 seconds or 100 minutes, you wont know unless you double check the graphs generated against the source data.
+On sparse data, the last N data points may be 100 seconds or 100 minutes, you won't know unless you double check the graphs generated against the source data.
 
 ---
 

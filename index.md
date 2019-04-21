@@ -12,7 +12,7 @@ Automatically check for outdated dependencies and references, update on the and 
 
 A .Net client for the Seyren alerting platform
 
-### [Alert Controller](https://github.com/uatec/Neutrino.AlertController)
+### [Seyren Alert Controller](https://github.com/uatec/Neutrino.AlertController)
 
 Inspired by the Kubernetes API model, Alert Controller, allows you to declare Seyren alerts using a YAML DSL and keep your Seyren instance synchronised.
 

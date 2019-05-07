@@ -4,6 +4,10 @@ title: HiDef Software Ltd
 ---
 ## Projects
 
+### [JiraFlow](https://github.com/uatec/jiraflow)
+
+Synchronise Your [Workflowy](https://www.workflowy.com) notes with Jira items to avoid having to interact with Jira.
+
 ### [Grader](https://grader.neutrino.io/)
 
 Automatically check for outdated dependencies and references, update on the and report on your team's progress.

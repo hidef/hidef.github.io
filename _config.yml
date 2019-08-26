@@ -9,7 +9,7 @@
 title: "HiDef Software"
 
 # A description of your site for social meta tag, search engines, and feed.xml
-description: "HiDef Software provides bold technical consulting on a range of IT and software related matters."
+description: "HiDef Software provides bold technical consulting on business and distributed systems development."
 
 # Tagline near the site title
 tagline: "Thoughts, innovation and awesome software."
@@ -41,7 +41,7 @@ disqus: hidef
 
 # Author information - author info at the bottom of the post
 author_name: "Robert Stiff"
-author_bio: "Robert is a software engineer and technologist working with IT focussed clients to build great technology and make it work for everyone."
+author_bio: "Robert is a software engineer and technical leader working with technology focussed clients to build great technology and make it work for everyone."
 author_url:  "https://www.hidefsoftware.co.uk"
 author_location: "London, United Kingdom"
 author_image: /images/authorimage.jpg

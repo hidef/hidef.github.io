@@ -10,7 +10,7 @@ In software engineering, there's often talk of the Source of Truth. Which databa
 
 <!--more-->
 
-These conversations madness. A database is never a source of truth. The word "source" means the point of origin. When thinking about the source of truth we need to think about where the data originates. Let's look at a few examples.
+These conversations have all made the assumption that they can decide who has authority over reality. Unfortunately a database is never a source of truth. The word "source" means the point of origin. When thinking about the source of truth we need to think about where the data originates. Let's look at a few examples.
 
 ## An eCommerce Website
 

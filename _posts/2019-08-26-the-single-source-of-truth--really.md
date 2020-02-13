@@ -34,7 +34,7 @@ So the phrase Source of Truth doesn't refer to which database I have built, it r
 
 ## Thinking Differently
 
-If we stop think about databases as an authority we can open ourselves up to other opportunities. Instead of deciding where data should live, we can start thinking about how it should get there. This means we can think in terms of integration and extension. 
+If we stop to think about databases as an authority we can open ourselves up to other opportunities. Instead of deciding where data should live, we can start thinking about how it should get there. This means we can think in terms of integration and extension. 
 
 Now, a more useful toolset to use is that of event streams. The events may come from multiple places or go to multiple places, but the stream is where you can find that truth.
 
